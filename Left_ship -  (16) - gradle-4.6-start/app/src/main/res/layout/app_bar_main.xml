@@ -148,10 +148,6 @@
         layout="@layout/edit"
         android:visibility="gone" />
 
-    <include
-        android:id="@+id/change_send"
-        layout="@layout/send"
-        android:visibility="gone" />
 
     <include
         android:id="@+id/change_add"

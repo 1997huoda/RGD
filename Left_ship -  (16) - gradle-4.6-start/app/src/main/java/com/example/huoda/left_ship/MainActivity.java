@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity
     private ImageView iv_photo;
     public TextView tv_day_id,tv_day_id2,tv_day_list,tv_day_pre;
     private ListView lv,lv_name;
-    public View change_add,change_con,change_del,change_wel,change_edit,change_look,change_send,change_share,change_help,change_date_day;
+    public View change_add,change_con,change_del,change_wel,change_edit,change_look,change_share,change_help,change_date_day;
     public View bo_yes,bo_to,bo_tom;
     public View content;
     public Button bt_add_save,bt_add_restore;
@@ -370,7 +370,7 @@ public class MainActivity extends AppCompatActivity
         change_del.setVisibility(View.GONE);
         change_edit.setVisibility(View.GONE);
         change_look.setVisibility(View.GONE);
-        change_send.setVisibility(View.GONE);
+
         change_share.setVisibility(View.GONE);
         change_help.setVisibility(View.GONE);
         change_date_day.setVisibility(View.GONE);
@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity
         change_wel = findViewById(R.id.change_wel);
         change_edit = findViewById(R.id.change_edit);
         change_look = findViewById(R.id.change_look);
-        change_send = findViewById(R.id.change_send);
+
         change_share = findViewById(R.id.change_share);
         change_help = findViewById(R.id.change_help);
         change_date_day = findViewById(R.id.change_date_day);
@@ -427,7 +427,7 @@ public class MainActivity extends AppCompatActivity
         change_del.setVisibility(View.VISIBLE);
         change_edit.setVisibility(View.GONE);
         change_look.setVisibility(View.GONE);
-        change_send.setVisibility(View.GONE);
+
         change_share.setVisibility(View.GONE);
         change_help.setVisibility(View.GONE);
         change_date_day.setVisibility(View.GONE);
@@ -458,8 +458,6 @@ public class MainActivity extends AppCompatActivity
         {state_1 = 5;}
         if(change_look.getVisibility()==(View.VISIBLE))
         {state_1 = 6;}
-        if(change_send.getVisibility()==(View.VISIBLE))
-        {state_1 = 7;}
         if(change_share.getVisibility()==(View.VISIBLE))
         {state_1 = 8;}
         if(change_help.getVisibility()==(View.VISIBLE))
@@ -471,7 +469,7 @@ public class MainActivity extends AppCompatActivity
         change_del.setVisibility(View.GONE);
         change_edit.setVisibility(View.GONE);
         change_look.setVisibility(View.GONE);
-        change_send.setVisibility(View.GONE);
+
         change_share.setVisibility(View.GONE);
         change_help.setVisibility(View.GONE);
         change_date_day.setVisibility(View.VISIBLE);
@@ -507,9 +505,7 @@ public class MainActivity extends AppCompatActivity
             case 6:
                 change_look.setVisibility(View.VISIBLE);
                 break;
-            case 7:
-                change_send.setVisibility(View.VISIBLE);
-                break;
+
             case 8:
                 change_share.setVisibility(View.VISIBLE);
                 break;
@@ -1682,7 +1678,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.GONE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.GONE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.GONE);
                     change_help.setVisibility(View.GONE);
                     change_date_day.setVisibility(View.GONE);
@@ -1694,7 +1690,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.VISIBLE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.GONE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.GONE);
                     change_help.setVisibility(View.GONE);
                     change_date_day.setVisibility(View.GONE);
@@ -1706,7 +1702,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.GONE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.VISIBLE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.GONE);
                     change_help.setVisibility(View.GONE);
                     change_date_day.setVisibility(View.GONE);
@@ -1752,7 +1748,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.GONE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.GONE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.VISIBLE);
                     onSuccess(100,"");
                     change_help.setVisibility(View.GONE);
@@ -1765,7 +1761,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.GONE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.GONE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.GONE);
                     change_help.setVisibility(View.GONE);
                     change_date_day.setVisibility(View.GONE);
@@ -1777,7 +1773,7 @@ public class MainActivity extends AppCompatActivity
                     change_del.setVisibility(View.GONE);
                     change_edit.setVisibility(View.GONE);
                     change_look.setVisibility(View.GONE);
-                    change_send.setVisibility(View.GONE);
+
                     change_share.setVisibility(View.GONE);
                     change_help.setVisibility(View.GONE);
                     change_date_day.setVisibility(View.GONE);
