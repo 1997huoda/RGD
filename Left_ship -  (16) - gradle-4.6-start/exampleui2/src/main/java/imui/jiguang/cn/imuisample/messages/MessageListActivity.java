@@ -1,5 +1,5 @@
 package imui.jiguang.cn.imuisample.messages;
-//长期保持非聊天界面 可以减少流量消耗？
+
 
 import android.Manifest;
 import android.app.Activity;

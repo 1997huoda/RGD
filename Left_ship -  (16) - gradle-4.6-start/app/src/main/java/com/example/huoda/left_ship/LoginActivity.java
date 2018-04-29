@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "Login界面";
     private SharedPreferences sharedPreferences;
 
-    private long exitTime;
     private EditText et_name;
     private EditText et_pwd;
     private ImageView ivLogo;

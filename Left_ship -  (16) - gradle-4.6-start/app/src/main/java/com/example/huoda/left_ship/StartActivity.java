@@ -12,7 +12,6 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class StartActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
@@ -71,21 +70,26 @@ public class StartActivity extends AppCompatActivity {
 
     private void isTodayFirstLogin() {
         //取
+//        SharedPreferences preferences = getSharedPreferences("LastLoginTime", MODE_PRIVATE);
+//        String lastTime = preferences.getString("LoginTime", "2017-04-08");
+        //修改为第一次登陆，而不是每日第一次登陆；
         SharedPreferences preferences = getSharedPreferences("LastLoginTime", MODE_PRIVATE);
-        String lastTime = preferences.getString("LoginTime", "2017-04-08");
+        String lastTime = preferences.getString("LoginTime", "0");
+
         // Toast.makeText(MainActivity.this, "value="+date, Toast.LENGTH_SHORT).show();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");// 设置日期格式
         todayTime = df.format(new Date());// 获取当前的日期
 
-        if (lastTime.equals(todayTime)) { //如果两个时间段相等
+        if (lastTime.equals("1")) { //如果两个时间段相等// if (lastTime.equals(todayTime)) { //如果两个时间段相等
            // Toast.makeText(this, "不是当日首次登陆", Toast.LENGTH_SHORT).show();
-            saveExitTime(todayTime);
+           // saveExitTime(todayTime);
             gotoLogin2();
             Log.e("Time", lastTime);
         } else {
-            Toast.makeText(this, "霍达提示您是今日首次登陆", Toast.LENGTH_SHORT).show();
-            saveExitTime(todayTime);
-
+//            Toast.makeText(this, "霍达提示您是今日首次登陆", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "霍达提示您是首次登陆", Toast.LENGTH_SHORT).show();
+//            saveExitTime(todayTime);
+            saveExitTime("1");
             gotoLogin();
             Log.e("date", lastTime);
             Log.e("todayDate", todayTime);
@@ -99,8 +103,6 @@ public class StartActivity extends AppCompatActivity {
         //apply()提交的数据会覆盖之前的,这个需求正是我们需要的结果
         editor.apply();
     }
-
-
 
    /* @Override
     protected void onCreate(Bundle savedInstanceState) {

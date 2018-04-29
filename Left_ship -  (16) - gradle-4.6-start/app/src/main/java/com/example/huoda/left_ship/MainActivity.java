@@ -1826,7 +1826,7 @@ public class MainActivity extends AppCompatActivity
                     break ;
                 case 100:
                     SmartImageView siv = (SmartImageView) findViewById(R.id.smart_v);
-                    siv.setImageUrl("http://20vv455999.iask.in:22467/WebServer/image/share.png", R.drawable.ic_menu_camera);
+                    siv.setImageUrl("http://pcohd.oicp.io:33667/WebServer/image/share.png", R.drawable.ic_menu_camera);
                     break;
                 case 99:
                     // vis();
