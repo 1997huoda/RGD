@@ -13,10 +13,10 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.example.huoda.left_ship"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 27
-        versionCode 5
-        versionName "5.0"
+        versionCode 6
+        versionName "6.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
 

@@ -101,7 +101,7 @@
                         android:layout_alignBottom="@id/date_picker_text_view"
                         android:layout_toRightOf="@id/date_picker_text_view"
                         app:srcCompat="@drawable/ic_arrow_drop_down"
-                        tools:ignore="ContentDescription,RtlHardcoded" />
+                        tools:ignore="ContentDescription,RtlHardcoded,VectorDrawableCompat" />
 
                 </RelativeLayout>
             </android.support.v7.widget.Toolbar>
